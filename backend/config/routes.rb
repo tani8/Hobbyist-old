@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   resources :hashtags, only: :create
 
+  resources :users, except: [:edit, :update, :index]
+
   # You can have the root of your site routed with "root"
   # root 'categories#index'
 
