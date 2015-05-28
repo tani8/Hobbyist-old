@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   resources :hashtags, only: :create
+  get 'hashtags/popular'
 
   resources :users, except: [:edit, :update, :index]
 
