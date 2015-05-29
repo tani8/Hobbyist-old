@@ -1,31 +1,32 @@
 class HobbiesController < ApplicationController
   before_action :find_hobby, only: [:edit, :update, :destroy]
+  before_action :allow_cross_domain
 
   def index
     hobbies = Hobby.select('hobbies.name')
                     .order('hobbies.name asc')
-    render json: hobbies.to_json
+    render json: hobbies
   end
 
   def create
     hobby = Hobby.new(hobby_params)
     hobby.category_id = params[:category_id]
     hobby.save
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def new
     hobby = Hobby.new
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def edit
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def update
     hobby.update_attributes(hobby_params)
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def destroy
@@ -39,6 +40,13 @@ class HobbiesController < ApplicationController
 
   def find_hobby
     hobby = Hobby.find(params[:id])
+  end
+
+  private
+  def allow_cross_domain
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, PATCH, DELETE, OPTIONS'
+    headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, Accept, Authorization, Token'
   end
 
 end

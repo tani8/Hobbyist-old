@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
     questions = Question.order('created_at DESC').all
     # headers = { "User-Agent" => "StacksOnStacks",
     #             "Authorization" => ENV['GITHUB_KEY']}
-    render json: questions.to_json
+    render json: questions
   end
 
   def create
@@ -13,22 +13,22 @@ class QuestionsController < ApplicationController
     question.hobby_id = params[:hobby_id]
     # question.user_id = something
     question.save
-    render json: question.to_json
+    render json: question
   end
 
   def new
     question = Question.new
-    render json: question.to_json
+    render json: question
   end
 
   def edit
-    render json: question.to_json
+    render json: question
   end
 
   def show
     answer = Answer.new
     answers = question.answers.order('created_at DESC').all
-    render json: answers.to_json
+    render json: answers
   end
 
   def update
@@ -38,7 +38,7 @@ class QuestionsController < ApplicationController
     # else
       # render 'edit'
     # end
-    render json: question.to_json
+    render json: question
   end
 
   def destroy

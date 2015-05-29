@@ -4,16 +4,16 @@ class UsersController < ApplicationController
   def create
     user = User.new(user_params)
     user.save
-    render json: user.to_json
+    render json: user
   end
 
   def new
     user = User.new
-    render json: user.to_json
+    render json: user
   end
 
   def show
-    render json: user.to_json
+    render json: user
   end
 
   def destroy
