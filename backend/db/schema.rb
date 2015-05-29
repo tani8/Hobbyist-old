@@ -11,8 +11,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150528224737) do
 
+ActiveRecord::Schema.define(version: 20150529002337) do
   create_table "answers", force: :cascade do |t|
     t.string   "body"
     t.integer  "question_id"
@@ -37,10 +37,8 @@ ActiveRecord::Schema.define(version: 20150528224737) do
   end
 
   create_table "hashtags_questions", id: false, force: :cascade do |t|
-    t.integer  "question_id", null: false
-    t.integer  "hashtag_id",  null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "hashtag_id",  null: false
+    t.integer "question_id", null: false
   end
 
   create_table "hobbies", force: :cascade do |t|
@@ -55,10 +53,8 @@ ActiveRecord::Schema.define(version: 20150528224737) do
   add_index "hobbies", ["category_id"], name: "index_hobbies_on_category_id"
 
   create_table "hobbies_users", id: false, force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "hobby_id",   null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "hobby_id", null: false
+    t.integer "user_id",  null: false
   end
 
   create_table "questions", force: :cascade do |t|
