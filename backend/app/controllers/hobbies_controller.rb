@@ -1,5 +1,5 @@
 class HobbiesController < ApplicationController
-  before_action :set_hobby, only: [:edit, :update, :destroy]
+  before_action :find_hobby, only: [:edit, :update, :destroy]
 
   def index
     hobbies = Hobby.select('hobbies.name')
@@ -36,7 +36,7 @@ class HobbiesController < ApplicationController
     params.require(:hobby).permit(:name, :description, :image_url)
   end
 
-  def set_hobby
+  def find_hobby
     hobby = Hobby.find(params[:id])
   end
 
