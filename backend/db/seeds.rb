@@ -49,11 +49,12 @@ categories.each do |cat, hobbies|
     new_cat.hobbies << new_hobby
     all_users.sample.hobbies << new_hobby
 
-    3.times do
+    1.times do
       new_question = Question.create(title: Faker::Lorem.sentence, body: Faker::Lorem.paragraph)
       all_users.sample.questions << new_question
+      new_hobby.questions << new_question
 
-      4.times do
+      2.times do
         new_answer = Answer.create(body: Faker::Company.bs)
         new_question.answers << new_answer
         all_users.sample.answers << new_answer
