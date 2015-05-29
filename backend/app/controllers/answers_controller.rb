@@ -1,5 +1,6 @@
 class AnswersController < ApplicationController
   before_action :find_answer, only: [:edit, :show, :destroy]
+  before_action :authenticate_user_from_token!, only: [:edit, :destroy]
 
   def index
     answer = Answer.order('created_at DESC').all
@@ -20,7 +21,10 @@ class AnswersController < ApplicationController
   end
 
   def edit
-    render json: @answer
+
+    return render json: @answer if compare_user?
+    render json: {errors: 'Unauthorized request'}, status: 401
+
   end
 
   def show
@@ -33,7 +37,15 @@ class AnswersController < ApplicationController
   end
 
   def destroy
-    @answer.destroy
+    if @answer
+      if compare_user?
+        @answer.destroy
+      else
+        render json: {errors: 'Unauthorized request'}, status: 401
+      end
+    else
+      render json: {errors: 'Bad Request'}, status: 400
+    end
   end
 
   private
@@ -45,5 +57,11 @@ class AnswersController < ApplicationController
     @answer = Answer.find(params[:id])
   end
 
+  def compare_user?
+    answer = Answer.find(params[:id])
+    creator_id = answer.user_id
+    auth_token = request.headers['Authorization']
+    creator_id == auth_token[0].to_i
+  end
 
 end

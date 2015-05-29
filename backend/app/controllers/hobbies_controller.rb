@@ -1,5 +1,6 @@
 class HobbiesController < ApplicationController
   before_action :find_hobby, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user_from_token!, only: [:edit, :destroy]
 
   def index
     hobbies = Hobby.select('hobbies.name')

@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   include AbstractController::Translation
 
-  before_action :authenticate_user_from_token!
+  # before_action :authenticate_user_from_token!
 
   respond_to :json
 
@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
     auth_token = request.headers['Authorization']
 
     if auth_token
-      authenticate_with_auth_token auth_token
+      authenticate_with_auth_token(auth_token)
     else
       authentication_error
     end
@@ -20,7 +20,7 @@ class ApplicationController < ActionController::API
 
   private
 
-  def authenticate_with_auth_token auth_token
+  def authenticate_with_auth_token(auth_token)
     unless auth_token.include?(':')
       authentication_error
       return
