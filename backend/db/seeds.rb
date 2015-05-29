@@ -36,7 +36,7 @@ users = {
 all_users = []
 
 users.each do |user, params|
-  new_user = User.create(username: user, email: params[:email], password: params[:password])
+  new_user = User.create(username: user, email: params[:email], password: params[:password], image_url: Faker::Avatar.image)
   all_users << new_user
 end
 
@@ -45,7 +45,7 @@ categories.each do |cat, hobbies|
   new_cat = Category.create(name: cat)
   hobbies.each do |hobby|
 
-    new_hobby = Hobby.create(name: hobby)
+    new_hobby = Hobby.create(name: hobby, description: Faker::Lorem.paragraph, image_url: Faker::Avatar.image)
     new_cat.hobbies << new_hobby
     all_users.sample.hobbies << new_hobby
 
