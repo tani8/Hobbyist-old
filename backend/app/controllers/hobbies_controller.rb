@@ -9,6 +9,7 @@ class HobbiesController < ApplicationController
 
   def create
     hobby = Hobby.new(hobby_params)
+    hobby.category_id = params[:category_id]
     hobby.save
     render json: hobby.to_json
   end
