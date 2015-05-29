@@ -1,11 +1,12 @@
 class QuestionsController < ApplicationController
   before_action :find_question, only: [:edit, :show, :destroy]
+  before_action :restrict_access, except: [:index, :show]
 
   def index
     questions = Question.order('created_at DESC').all
     # headers = { "User-Agent" => "StacksOnStacks",
     #             "Authorization" => ENV['GITHUB_KEY']}
-    render json: questions.to_json
+    render json: questions
   end
 
   def create
@@ -13,22 +14,22 @@ class QuestionsController < ApplicationController
     question.hobby_id = params[:hobby_id]
     # question.user_id = something
     question.save
-    render json: question.to_json
+    render json: question
   end
 
   def new
     question = Question.new
-    render json: question.to_json
+    render json: question
   end
 
   def edit
-    render json: question.to_json
+    render json: question
   end
 
   def show
     answer = Answer.new
     answers = question.answers.order('created_at DESC').all
-    render json: answers.to_json
+    render json: answers
   end
 
   def update
@@ -38,7 +39,7 @@ class QuestionsController < ApplicationController
     # else
       # render 'edit'
     # end
-    render json: question.to_json
+    render json: question
   end
 
   def destroy
@@ -54,4 +55,9 @@ class QuestionsController < ApplicationController
     question = Question.find(params[:id])
   end
 
+  def restrict_access
+    authenticate_or_request_with_http_token do |token, options|
+      ApiKey.exists?(access_token: token)
+    end
+  end
 end
