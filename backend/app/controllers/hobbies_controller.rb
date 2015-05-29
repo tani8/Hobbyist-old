@@ -1,6 +1,6 @@
 class HobbiesController < ApplicationController
-  before_action :find_hobby, only: [:edit, :update, :destroy]
-  before_action :restrict_access, except: [:index, :show]
+  before_action :find_hobby, only: [:show, :edit, :update, :destroy]
+  # before_action :restrict_access, except: [:index, :show]
 
   def index
     hobbies = Hobby.select('hobbies.name')
@@ -21,19 +21,20 @@ class HobbiesController < ApplicationController
   end
 
   def edit
-    render json: hobby
+    render json: @hobby
   end
 
   def show
+    render json: @hobby
   end
 
   def update
-    hobby.update_attributes(hobby_params)
-    render json: hobby
+    @hobby.update_attributes(hobby_params)
+    render json: @hobby
   end
 
   def destroy
-    hobby.destroy
+    @hobby.destroy
   end
 
   private
@@ -42,7 +43,7 @@ class HobbiesController < ApplicationController
   end
 
   def find_hobby
-    hobby = Hobby.find(params[:id])
+    @hobby = Hobby.find(params[:id])
   end
 
   def restrict_access

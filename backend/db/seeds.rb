@@ -27,16 +27,16 @@ categories = {
 }
 
 users = {
-  'Keith' => {email: 'keith@mail.com', password: 123},
-  'Taniya' => {email: 'taniya@mail.com', password: 123},
-  'Caitlyn' => {email: 'caitlyn@mail.com', password: 123},
-  'David' => {email: 'david@mail.com', password: 123},
+  'Keith' => {email: 'keith@mail.com', password_confirmation: '12345678', password: '12345678'},
+  'Taniya' => {email: 'taniya@mail.com', password_confirmation: '12345678', password: '12345678'},
+  'Caitlyn' => {email: 'caitlyn@mail.com', password_confirmation: '12345678', password: '12345678'},
+  'David' => {email: 'david@mail.com', password_confirmation: '12345678', password: '12345678'},
 }
 
 all_users = []
 
 users.each do |user, params|
-  new_user = User.create(username: user, email: params[:email], password: params[:password], image_url: Faker::Avatar.image)
+  new_user = User.create(username: user, email: params[:email], password: params[:password_confimration], image_url: Faker::Avatar.image)
   all_users << new_user
 end
 

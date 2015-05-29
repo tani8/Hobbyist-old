@@ -1,6 +1,6 @@
 class AnswersController < ApplicationController
   before_action :find_answer, only: [:edit, :show, :destroy]
-  before_action :restrict_access, except: :index
+  # before_action :restrict_access, except: :index
 
   def index
     answer = Answer.order('created_at DESC').all
@@ -21,20 +21,20 @@ class AnswersController < ApplicationController
   end
 
   def edit
-    render json: answer
+    render json: @answer
   end
 
   def show
-    render json: answer
+    render json: @answer
   end
 
   def update
     answer = Answer.update_attributes(answer_params)
-    render json: answer
+    render json: @answer
   end
 
   def destroy
-    answer.destroy
+    @answer.destroy
   end
 
   private
@@ -43,7 +43,7 @@ class AnswersController < ApplicationController
   end
 
   def find_answer
-    answer = Answer.find(params[:id])
+    @answer = Answer.find(params[:id])
   end
 
   def restrict_access

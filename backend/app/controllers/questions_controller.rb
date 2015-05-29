@@ -23,27 +23,27 @@ class QuestionsController < ApplicationController
   end
 
   def edit
-    render json: question
+    render json: @question
   end
 
   def show
     answer = Answer.new
-    answers = question.answers.order('created_at DESC').all
+    answers = @question.answers.order('created_at DESC').all
     render json: answers
   end
 
   def update
     # if
-    question.update_attributes(question_params)
+    @question.update_attributes(question_params)
     #   redirect_to '/'
     # else
       # render 'edit'
     # end
-    render json: question
+    render json: @question
   end
 
   def destroy
-    question.destroy
+    @question.destroy
   end
 
   private
@@ -52,7 +52,7 @@ class QuestionsController < ApplicationController
   end
 
   def find_question
-    question = Question.find(params[:id])
+    @question = Question.find(params[:id])
   end
 
   def restrict_access
