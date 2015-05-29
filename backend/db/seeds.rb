@@ -36,7 +36,7 @@ users = {
 all_users = []
 
 users.each do |user, params|
-  new_user = User.create(username: user, email: params[:email], password: params[:password_confimration], image_url: Faker::Avatar.image)
+  new_user = User.create(username: user, email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation], image_url: Faker::Avatar.image)
   all_users << new_user
 end
 

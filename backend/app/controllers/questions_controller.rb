@@ -1,6 +1,5 @@
 class QuestionsController < ApplicationController
   before_action :find_question, only: [:edit, :show, :destroy]
-  before_action :restrict_access, except: [:index, :show]
 
   def index
     questions = Question.order('created_at DESC').all
@@ -55,9 +54,4 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
   end
 
-  def restrict_access
-    authenticate_or_request_with_http_token do |token, options|
-      ApiKey.exists?(access_token: token)
-    end
-  end
 end
