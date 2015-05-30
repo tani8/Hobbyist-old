@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::API
   include AbstractController::Translation
-
   include ActionController::ImplicitRender
   # before_action :authenticate_user_from_token!
 
