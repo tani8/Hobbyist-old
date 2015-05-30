@@ -1,35 +1,39 @@
 class HobbiesController < ApplicationController
-  before_action :find_hobby, only: [:edit, :update, :destroy]
+  before_action :find_hobby, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user_from_token!, only: [:edit, :destroy]
 
   def index
-    hobbies = Hobby.select('hobbies.name')
-                    .order('hobbies.name asc')
-    render json: hobbies.to_json
+    hobbies = Hobby.order(name: :asc)
+    render json: hobbies
   end
 
   def create
     hobby = Hobby.new(hobby_params)
     hobby.category_id = params[:category_id]
     hobby.save
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def new
     hobby = Hobby.new
-    render json: hobby.to_json
+    render json: hobby
   end
 
   def edit
-    render json: hobby.to_json
+    render json: @hobby
+  end
+
+  def show
+    render json: @hobby
   end
 
   def update
-    hobby.update_attributes(hobby_params)
-    render json: hobby.to_json
+    @hobby.update_attributes(hobby_params)
+    render json: @hobby
   end
 
   def destroy
-    hobby.destroy
+    @hobby.destroy
   end
 
   private
@@ -38,7 +42,7 @@ class HobbiesController < ApplicationController
   end
 
   def find_hobby
-    hobby = Hobby.find(params[:id])
+    @hobby = Hobby.find(params[:id])
   end
 
 end

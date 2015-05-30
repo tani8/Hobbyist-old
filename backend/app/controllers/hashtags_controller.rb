@@ -1,7 +1,6 @@
 class HashtagsController < ApplicationController
 
   def create
-
   end
 
   def popular
@@ -11,7 +10,7 @@ class HashtagsController < ApplicationController
               .order('hashtag_count desc')
               .limit(10)
     hashtags = hashtags.map { |tag| tag.name }
-    render json: hashtags.to_json
+    render json: hashtags
   end
 
 end

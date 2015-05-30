@@ -1,22 +1,34 @@
 Rails.application.routes.draw do
+  devise_for :users, only: []
+
+  # namespace :v1, defaults: { format: :json } do
+    resource :login, only: [:create], controller: :sessions, defaults: { format: :json }
+  # end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  resources :categories, only: :index do
-    resources :hobbies, except: :show do
-      resources :questions do   # might not need index page???
-        resources :answers      # might not need index/show page
-      end
-    end
-  end
+  # resources :categories, only: [:index, :show] do
+  #   resources :hobbies do
+  #     resources :questions do   # might not need index page???
+  #       resources :answers      # might not need index/show page
+  #     end
+  #   end
+  # end
+
+  resources :categories, only: [:index, :show]
+  resources :hobbies
+  resources :questions
+  resources :answers
+
 
   resources :hashtags, only: :create
   get 'hashtags/popular'
 
-  resources :users, except: [:edit, :update, :index]
+  # resources :users, except: [:edit, :update, :index]
+  # probably don't need this now that we have devise
 
   # You can have the root of your site routed with "root"
-  # root 'categories#index'
+  root 'categories#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

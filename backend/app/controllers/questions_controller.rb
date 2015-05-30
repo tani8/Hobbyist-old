@@ -1,11 +1,12 @@
 class QuestionsController < ApplicationController
   before_action :find_question, only: [:edit, :show, :destroy]
+  before_action :authenticate_user_from_token!, only: [:edit, :destroy]
 
   def index
     questions = Question.order('created_at DESC').all
     # headers = { "User-Agent" => "StacksOnStacks",
     #             "Authorization" => ENV['GITHUB_KEY']}
-    render json: questions.to_json
+    render json: questions
   end
 
   def create
@@ -13,36 +14,48 @@ class QuestionsController < ApplicationController
     question.hobby_id = params[:hobby_id]
     # question.user_id = something
     question.save
-    render json: question.to_json
+    render json: question
   end
 
   def new
     question = Question.new
-    render json: question.to_json
+    render json: question
   end
 
   def edit
-    render json: question.to_json
+    if compare_user?
+      render json: @question
+    else
+      # render status: 401
+      render json: {errors: 'Unauthorized request'}, status: 401
+    end
   end
 
   def show
-    answer = Answer.new
-    answers = question.answers.order('created_at DESC').all
-    render json: answers.to_json
+    answers = @question.answers.order('created_at DESC').all
+    render json: answers
   end
 
   def update
     # if
-    question.update_attributes(question_params)
+    @question.update_attributes(question_params)
     #   redirect_to '/'
     # else
       # render 'edit'
     # end
-    render json: question.to_json
+    render json: @question
   end
 
   def destroy
-    question.destroy
+    if @question
+      if compare_user?
+        @question.destroy
+      else
+        render json: {errors: 'Unauthorized request'}, status: 401
+      end
+    else
+      render json: {errors: 'Bad Request'}, status: 400
+    end
   end
 
   private
@@ -51,7 +64,13 @@ class QuestionsController < ApplicationController
   end
 
   def find_question
-    question = Question.find(params[:id])
+    @question = Question.where(id: params[:id]).first
   end
 
+  def compare_user?
+    question = Question.find(params[:id])
+    creator_id = question.user_id
+    auth_token = request.headers['Authorization']
+    creator_id == auth_token[0].to_i
+  end
 end
