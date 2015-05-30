@@ -5,4 +5,13 @@ class Hobby < ActiveRecord::Base
 
   validates_presence_of :name, :description, :image_url, :category_id
   validates_uniqueness_of :name
+
+  def to_builder
+    Jbuilder.new do |hobby|
+      hobby.name name
+      hobby.description description
+      hobby.image_url image
+      hobby.category_id category.to_builder
+    end
+  end
 end

@@ -26,7 +26,6 @@ class QuestionsController < ApplicationController
     if compare_user?
       render json: @question
     else
-      # render status: 401
       render json: {errors: 'Unauthorized request'}, status: 401
     end
   end
@@ -37,12 +36,7 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    # if
     @question.update_attributes(question_params)
-    #   redirect_to '/'
-    # else
-      # render 'edit'
-    # end
     render json: @question
   end
 

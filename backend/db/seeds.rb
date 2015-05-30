@@ -58,3 +58,9 @@ categories.each do |cat, hobbies|
 end
 
 
+
+
+
+
+
+
