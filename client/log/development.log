@@ -53,3 +53,2717 @@ Started GET "/" for ::1 at 2015-05-28 14:20:51 -0700
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/taniyaprabhakar/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
 Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 19:11:44 -0700
+
+ActionController::RoutingError (uninitialized constant CategoryController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.1) lib/rack/etag.rb:24:in `call'
+  rack (1.6.1) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.1) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.1) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (19.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (83.6ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 19:11:56 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2444ms (Views: 2442.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-29 19:11:59 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:14:22 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 283ms (Views: 282.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:14:22 -0700
+
+
+Started GET "/assets/hobbies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-29 19:14:22 -0700
+
+
+Started GET "/categories/show" for ::1 at 2015-05-29 19:14:30 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/show" for ::1 at 2015-05-29 19:19:12 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/hobbies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-29 19:19:12 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:21:38 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 177ms (Views: 176.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/categories.self-a5745c81361915b7facc4e33c0a1beabf275376f89ab6b2fe364ab868dc5010e.js?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-29 19:21:38 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:21:59 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 174ms (Views: 173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-29 19:22:00 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:22:03 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-05-29 19:22:03 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:22:33 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 306ms (Views: 304.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:22:33 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:23:50 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:23:50 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:24:10 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 446ms (Views: 435.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:24:10 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:24:12 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:24:12 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:25:02 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:25:02 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:26:13 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:26:13 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:28:14 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 455ms (Views: 442.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:28:15 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:30:39 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/categories.self-547ed61725ec56c4f8c55a88985e9956e0afff8d93e0a4bbff2becad53597996.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:30:39 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:34:13 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 180ms (Views: 179.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/assets/categories.self-a5745c81361915b7facc4e33c0a1beabf275376f89ab6b2fe364ab868dc5010e.js?body=1" for ::1 at 2015-05-29 19:34:13 -0700
+
+
+Started GET "/categories/17" for ::1 at 2015-05-29 19:34:18 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"17"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:39:01 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 261ms (Views: 260.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-994af86564da5caaa8280250821fd5932495a9ae971c34d1230091471a0c93cc.js?body=1" for ::1 at 2015-05-29 19:39:02 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:39:03 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/assets/categories.self-994af86564da5caaa8280250821fd5932495a9ae971c34d1230091471a0c93cc.js?body=1" for ::1 at 2015-05-29 19:39:04 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:41:04 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 201ms (Views: 200.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-302065d7a417df999b367548cc1d528fdb14e87b67a232fb88d24bf6f4f97b7d.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:41:05 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:42:57 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 339ms (Views: 337.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/categories.self-250ba72eee329e50e7d94f40bfebd8330c33c0f26ba3326c4041731f1cc5a178.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:42:57 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:43:33 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/categories.self-250ba72eee329e50e7d94f40bfebd8330c33c0f26ba3326c4041731f1cc5a178.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:43:33 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:44:30 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 189ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-59ef94ebf239371463e09e0f69e5bb61c6806d3188d5bfc07dbecefeda826646.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:44:30 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:45:36 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/categories.self-59ef94ebf239371463e09e0f69e5bb61c6806d3188d5bfc07dbecefeda826646.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:45:36 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:46:04 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 217ms (Views: 215.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-14795474200388a87ea9b84e417dfadb8561c7bedbe69e6c9fb914437b708ffe.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:46:04 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:47:11 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/categories.self-14795474200388a87ea9b84e417dfadb8561c7bedbe69e6c9fb914437b708ffe.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:47:11 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:48:22 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/categories.self-14795474200388a87ea9b84e417dfadb8561c7bedbe69e6c9fb914437b708ffe.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:48:22 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 19:48:36 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:48:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:48:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:48:36 -0700
+
+
+Started GET "/assets/categories.self-ce7977cc4c34701151f980208f15cacfe44ae5d31a639082893e43a738ea554b.js?body=1" for ::1 at 2015-05-29 19:48:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:48:37 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:48:37 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:48:37 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:48:37 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:48:37 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:48:38 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:49:15 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:49:18 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:49:21 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/categories.self-14795474200388a87ea9b84e417dfadb8561c7bedbe69e6c9fb914437b708ffe.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:49:21 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:49:23 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/categories.self-14795474200388a87ea9b84e417dfadb8561c7bedbe69e6c9fb914437b708ffe.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:49:23 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:49:26 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 19:49:51 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 205ms (Views: 203.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-3e2f8fa8717237a134989ea12337d683c6f89d03fda7a9f8d80a5d2a0a9b20e8.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:49:51 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:51:18 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/categories.self-3e2f8fa8717237a134989ea12337d683c6f89d03fda7a9f8d80a5d2a0a9b20e8.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:51:18 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:51:24 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/categories.self-3e2f8fa8717237a134989ea12337d683c6f89d03fda7a9f8d80a5d2a0a9b20e8.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:51:24 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:51:48 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/categories.self-3e2f8fa8717237a134989ea12337d683c6f89d03fda7a9f8d80a5d2a0a9b20e8.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:51:48 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:54:16 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 272ms (Views: 270.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-f6704540aa4281b46aabc68e513d9b61e143fe5e5f4cbbd6dde5507d4d7098a6.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:54:16 -0700
+
+
+Started GET "/hobby/49" for ::1 at 2015-05-29 19:54:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/hobby/49"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (40.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/hobby/49" for ::1 at 2015-05-29 19:54:18 -0700
+
+ActionController::RoutingError (No route matches [GET] "/hobby/49"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.7ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 19:55:23 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/categories.self-f6704540aa4281b46aabc68e513d9b61e143fe5e5f4cbbd6dde5507d4d7098a6.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:55:23 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 19:55:55 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/categories.self-f6704540aa4281b46aabc68e513d9b61e143fe5e5f4cbbd6dde5507d4d7098a6.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 19:55:55 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:57:33 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 214ms (Views: 213.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 19:57:34 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-6a2532ce96fa3cb793b84bad57b0f073b6d6500822a902166a339219144dd37e.js?body=1" for ::1 at 2015-05-29 19:57:34 -0700
+
+
+Started GET "/categories/1" for ::1 at 2015-05-29 19:57:44 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/1" for ::1 at 2015-05-29 19:57:47 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/2" for ::1 at 2015-05-29 20:01:58 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 221ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/2" for ::1 at 2015-05-29 20:02:04 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-f24733f98b6cdd1b85c21f133495cbfb974aeed3e82788e99567f48a1258b73d.js?body=1" for ::1 at 2015-05-29 20:02:04 -0700
+
+
+Started GET "/categories/2" for ::1 at 2015-05-29 20:02:34 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/categories.self-f24733f98b6cdd1b85c21f133495cbfb974aeed3e82788e99567f48a1258b73d.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:02:34 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:02:37 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:03:18 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/categories.self-f24733f98b6cdd1b85c21f133495cbfb974aeed3e82788e99567f48a1258b73d.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:03:18 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:03:40 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:03:40 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:04:00 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 264ms (Views: 263.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/categories.self-379f6a5005bc55ef40743ce8243e7fe1625a7ab6bc76e329f07e6a7cb3f25432.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:04:00 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:05:02 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 199.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-57e0b667acb5d4b620ae3acbe5f4537b68bb559835d038bcf9599a490b78e9ae.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:05:02 -0700
+
+
+Started GET "/categories" for ::1 at 2015-05-29 20:05:18 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 192ms (Views: 191.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/categories.self-1a74ebab71580d7490dbabe3cf8fd32e0e6b01a14eff08a711ddc47a0e8a68db.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:05:18 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:05:51 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 257ms (Views: 256.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-3664477a873ff1c1cb2219227dd59f60f7264be2293007d1645fd1d3b8771609.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:05:52 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:07:21 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/categories.self-3664477a873ff1c1cb2219227dd59f60f7264be2293007d1645fd1d3b8771609.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:07:21 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:07:37 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:07:37 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/categories.self-3664477a873ff1c1cb2219227dd59f60f7264be2293007d1645fd1d3b8771609.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:07:38 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:16:11 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 279ms (Views: 278.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-5155a878ddcb9fd58aea22d6bc0dfb106bb674a594cfdaca662c81760fe020be.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:16:11 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:16:23 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/categories.self-5155a878ddcb9fd58aea22d6bc0dfb106bb674a594cfdaca662c81760fe020be.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:16:23 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:16:24 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:16:38 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/categories.self-5155a878ddcb9fd58aea22d6bc0dfb106bb674a594cfdaca662c81760fe020be.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:16:38 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:16:39 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hobbies/49" for ::1 at 2015-05-29 20:16:45 -0700
+Processing by HobbiesController#show as HTML
+  Parameters: {"id"=>"49"}
+  Rendered hobbies/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:16:50 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/categories.self-5155a878ddcb9fd58aea22d6bc0dfb106bb674a594cfdaca662c81760fe020be.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:16:50 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:16:52 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:16:55 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/categories.self-5155a878ddcb9fd58aea22d6bc0dfb106bb674a594cfdaca662c81760fe020be.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:16:55 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:17:01 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:17:03 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:17:24 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 195ms (Views: 194.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-60ec29616d25eba7058bcc87502e1067cdf150f8471b0b8d178d63252e13089c.js?body=1" for ::1 at 2015-05-29 20:17:24 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:17:26 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:17:48 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/assets/categories.self-60ec29616d25eba7058bcc87502e1067cdf150f8471b0b8d178d63252e13089c.js?body=1" for ::1 at 2015-05-29 20:17:48 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:17:50 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/categories.self-60ec29616d25eba7058bcc87502e1067cdf150f8471b0b8d178d63252e13089c.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:17:50 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:18:05 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/categories.self-60ec29616d25eba7058bcc87502e1067cdf150f8471b0b8d178d63252e13089c.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:18:05 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:18:25 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 201ms (Views: 200.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-6d66dbeb7a9fc9c0241116feb8be579ae57b9e36612f648a46c47b13d2c38808.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:18:26 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:18:29 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/categories.self-6d66dbeb7a9fc9c0241116feb8be579ae57b9e36612f648a46c47b13d2c38808.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:18:30 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:18:30 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:18:39 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:20:31 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/categories.self-e88eae576f5d00f7c6df3422d053006f68d5f535605cf9c77ae69c158dc7b098.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:20:31 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:20:35 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:20:36 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:20:46 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:21:12 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/categories.self-e88eae576f5d00f7c6df3422d053006f68d5f535605cf9c77ae69c158dc7b098.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:21:12 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:21:13 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:21:14 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:21:24 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 266ms (Views: 265.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-1e0bc3bc310178ce4f9d92d34036c89f6dcf6c09ae6c22cfeec8f0f72b27a828.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:21:24 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:22:36 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 184ms (Views: 183.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/categories.self-d210bf0201397f7f0392db1f141264db9e6865c6991172aeddc4fe18915c8f72.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:22:36 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:27:47 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/categories.self-d210bf0201397f7f0392db1f141264db9e6865c6991172aeddc4fe18915c8f72.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:27:47 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:27:54 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 112ms (Views: 111.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/categories.self-d210bf0201397f7f0392db1f141264db9e6865c6991172aeddc4fe18915c8f72.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:27:54 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:29:06 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 191ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/categories.self-f5c4e2fc42322efba697a54792bd0f5eaa99bf7eabaed6117152dc29a0601d7c.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:29:07 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:29:08 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:42:34 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 196ms (Views: 195.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-4c5101cc02b23d3e2bf8a3b284cb64ccfe537154e274479234b5c4039615dbfe.js?body=1" for ::1 at 2015-05-29 20:42:34 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:42:37 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:43:11 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:43:18 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:43:36 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 198ms (Views: 197.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/categories.self-caac925adb551b12a97be4d64ff630cdbd55d749df9081cff4438df104c94cf3.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:43:36 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:05 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 243ms (Views: 241.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/categories.self-59abc7c20c9603e5aa259d00d88229944a54747eb2f976ec2c32366c1bebd70c.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:45:05 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:16 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 192ms (Views: 191.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/categories.self-7fc6db35599a57394e00d4912fa12044e94fe55784b6067f97e31ff9e3d38ad9.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:45:16 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:18 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/categories.self-7fc6db35599a57394e00d4912fa12044e94fe55784b6067f97e31ff9e3d38ad9.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:45:18 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:45:19 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:21 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/3" for ::1 at 2015-05-29 20:45:23 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:26 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:45:32 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:46:05 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 195ms (Views: 194.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-c5652415bf8bcc52ab0323f060aa37e3c8627a29439c17b94ed7f6549f070680.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:46:05 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:46:06 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:46:59 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 277ms (Views: 275.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-3c9c51241526d8bcf0a81a46bd9b66aa9ded2855088dd360ebea4d0a174f17d8.js?body=1" for ::1 at 2015-05-29 20:47:00 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:47:21 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/categories.self-3c9c51241526d8bcf0a81a46bd9b66aa9ded2855088dd360ebea4d0a174f17d8.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:47:21 -0700
+
+
+Started GET "/" for ::1 at 2015-05-29 20:47:39 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 201ms (Views: 200.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/categories.self-674a042b9e5f573dc43af0937a05b858936522bca5109afe97b3a83447fcbaf0.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:47:39 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:47:40 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:48:28 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 111ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:48:28 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:50:26 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:50:33 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:50:44 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:50:51 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 20:51:25 -0700
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 123ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/hobbies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/handlebars.self-57fef24df71388a1e3c2d68fd4a5faa2ba41bc8177615bcf911dc3c3f010a6f0.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/categories.self-3c9c51241526d8bcf0a81a46bd9b66aa9ded2855088dd360ebea4d0a174f17d8.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-05-29 20:51:25 -0700
+
+
+Started GET "/categories/12" for ::1 at 2015-05-29 20:53:50 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"12"}
+  Rendered categories/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)

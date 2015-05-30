@@ -1,0 +1,33 @@
+<body class="<%= controller_name %> <%= action_name %>">
+<h1>Welcome to Hobbay</h1>
+
+<div id="categories">
+</div>
+
+<!-- <div id="show_category">
+</div> -->
+
+<div id="show_hobby">
+</div>
+
+<script id="all_categories" type="text/x-handlebars-template">
+  <ul>
+  {{#each categories}}
+    <li><a class="category_link" href="/categories/{{id}}">{{name}}</a></li>
+  {{/each}}
+  </ul>
+</script>
+
+<script id="category_template" type="text/x-handlebars-template">
+  <ul>
+  {{#each hobbies}}
+    <li><a class="hobby_link" href="/hobbies/{{id}}">{{name}}</a></li>
+  {{/each}}
+  </ul>
+</script>
+
+<script id="hobby_template" type="text/x-handlebars-template">
+  <p>{{name}}</p>
+  <p>{{description}}</p>
+</script>
+

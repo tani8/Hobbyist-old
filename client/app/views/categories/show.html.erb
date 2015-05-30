@@ -1,0 +1,10 @@
+<h1>Show</h1>
+<div id="show_category">
+</div>
+<script id="category_template" type="text/x-handlebars-template">
+  <ul>
+  {{#each hobbies}}
+    <li><a class="hobby_link" href="/hobbies/{{id}}">{{name}}</a></li>
+  {{/each}}
+  </ul>
+</script>
