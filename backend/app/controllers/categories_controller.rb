@@ -1,7 +1,6 @@
 class CategoriesController < ApplicationController
   def index
-    categories = Category.select('categories.name')
-                          .order('categories.name asc')
+    categories = Category.order(name: :asc)
     render json: categories
   end
 

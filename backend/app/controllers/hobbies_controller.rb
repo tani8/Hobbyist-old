@@ -3,8 +3,7 @@ class HobbiesController < ApplicationController
   before_action :authenticate_user_from_token!, only: [:edit, :destroy]
 
   def index
-    hobbies = Hobby.select('hobbies.name')
-                    .order('hobbies.name asc')
+    hobbies = Hobby.order(name: :asc)
     render json: hobbies
   end
 
