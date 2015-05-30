@@ -3,5 +3,7 @@
     {{#each model}}
       <li>{{#link-to 'category' this}}{{name}}{{/link-to}}</li>
     {{/each}}
+    <span {{action 'getCategory' this}}>
+      </span>
   </ul>
 </div>

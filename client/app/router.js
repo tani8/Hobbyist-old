@@ -6,21 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  // this.resource('index', {path: 'categories'})
-  this.resource('categories', function(){
-    this.resource('category', {path: ':category_id'});
-      // , function(){
-      // this.resource('hobbies');
-    });
-
-
+  this.resource('categories');
+  this.resource('category', { path: ':category_id' });
 });
 
-var IndexRoute = Ember.Route.extend({
-  redirect: function(){
-    this.transitionTo('categories');
-  }
-})
 
 export default Router;
 
