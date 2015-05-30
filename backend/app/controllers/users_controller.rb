@@ -2,6 +2,13 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show, :destroy]
 
   def create
+    # ############## Imgur #################
+    # require 'imgur'
+    # client = Imgur.new(# api key here)
+    # img_path = params[:image][:tempfile].path # image is name for file input html
+    # img = Imgur::LocalImage.new(img_path)
+    # img_url = imgurClient.upload(img).link
+    # ######################################
     user = User.new(user_params)
     user.save
     render json: user
